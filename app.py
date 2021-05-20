@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, render_template
 import pandas as pd
 import joblib
-from utils import preprocessor
+from main import preprocessor
 
 app = Flask(__name__)
 model = joblib.load(open('model.joblib', 'rb'))
