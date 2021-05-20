@@ -23,5 +23,5 @@ def predict():
     return render_template('index.html', sentiment=f'Predicted sentiment of "{input}" is {output}.')
 
 
-if __name__ == "iklow1":
+if __name__ == "__main__":
     app.run(debug=True)
