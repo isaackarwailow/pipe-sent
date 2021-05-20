@@ -1,10 +1,10 @@
 from flask import Flask, request, jsonify, render_template
 import pandas as pd
 import joblib
-from main import preprocessor
+from utils import preprocessor
 
 app = Flask(__name__)
-model = joblib.load(open('model.joblib', 'rb'))
+model = joblib.load(open('model.py', 'rb'))
 
 @app.route('/')
 def home():
