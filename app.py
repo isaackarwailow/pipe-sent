@@ -24,4 +24,10 @@ def predict():
 
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     app.run(debug=True)
+=======
+    preprocessor.load_document('utils.py')
+    app.run(debug=True)
+    
+>>>>>>> 74a1c78e5cf5b5a2e74f63fc82052bb337a97af9
